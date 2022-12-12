@@ -1,0 +1,39 @@
+For this project, I used the module "turtle", a python pre-installed library to create a Puzzle Slider Game. 
+
+Decomposition
+I decomposed this project into five parts, to play the puzzle slider game. First you need a (1.) Gameboard, then you need to be able to 
+(2.) Shuffle each piece(here I call it tile) of the puzzle and put it on the gameboard. After creating the gameboard and tiles for the puzzle, 
+(3.) you then need implement the logic of how to complete the game on those tiles, including how they move, in what condition user will win or lose the game. 
+(4.) Do some functional buttons to allow user to load different puzzle, to reset the puzzle as a cheat sheet if its too hard, or to quit the game. 
+(5.) Last but not least, put all the error to error log.
+
+Algorithm 
+After the problem decomposition, I design the following algorithm to solve my problem
+1. Create a Gameboard, I created a python class as a blueprint for the gameboard, user can design their own gameboard.
+2. After I designed the gameboard, I then create my own Turtle class to "play" the game.
+   In my Turtle class, I have four turtles to operate the whole game. 
+   (1.) Drawing turtle 
+      i. Draw the Gameboard layout
+      ii. Draw the shuffle tiles
+         i. Create tile objects as I draw the tile on the gameboard.
+      iii. Handle click event 
+         i. Tile switch logic
+            -- Use Position system to keep track of the blank tile coordinates, because only tiles that are adjacent to the blank tile can be switched
+         ii. Design the win and lose logic under here, because win and lose will only be decided after each click
+            -- save the winner count and name to file and shows on the leader board
+         iii. Button event 
+            -- quit, reset, load button.
+   (2.) Erase turtle
+      i. Shows and updates player moves
+      ii. Clear player moves when they load new games
+   (3.) Error turtle 
+      i. Handle error message
+   (4.) Leader turtle
+      i. Store the latest leaders for each puzzle on the leader board.
+
+After implementing the algorthm.
+Cleaning my code, bug fixing and load the error to error log. 
+
+Done!!!
+
+
