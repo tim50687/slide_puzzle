@@ -29,9 +29,11 @@ slide_puzzle folder.
 
 
 Run the custom_puzzle_setup.py on terminal to make the custom puzzle!
-Follow the instruction typing the image file name then the size of the puzzle you want.
 ```bash
 % python3 custom_puzzle_setup.py
+```
+Follow the instruction typing the image file name then the size of the puzzle you want.
+```
 What is your image's name?
 Ex. mario.jpg
 :southpark.png
